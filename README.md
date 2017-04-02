@@ -29,7 +29,7 @@ License: [The Code Project Open License (CPOL) 1.02]
 * Remember check your path for your OpenGL Shared Object library
 * Check MTL path on your OBJ files
 * Thanks for Alexandr Lazov for ask to help which make do it this and sorry not complete this
-    * Their links to obj loader:
+    * Their links about obj loader coding:
         * [PyGAME ObjLoader]
         * [PyOpenGL tutorial(russian)]
 
