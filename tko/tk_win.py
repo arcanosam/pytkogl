@@ -84,13 +84,11 @@ class TkOglWin(Frame):
 
             glXMakeCurrent(self.dpy, self.winfo_id(), glc)
 
-        self.set_ortho_view()
+        self.add_gui()
+
+        self.pre_glcommands()
 
         self.parent.after(10, self._render_loop)
-
-    def on_resize(self, event, arg=None):
-
-        raise NotImplementedError
 
     def _render_loop(self):
 
@@ -105,6 +103,16 @@ class TkOglWin(Frame):
             glXSwapBuffers(self.dpy, self.winfo_id())
 
         self.parent.after(5, self._render_loop)
+
+    def add_gui(self):
+        raise NotImplementedError
+
+    def on_resize(self, event):
+
+        raise NotImplementedError
+
+    def pre_glcommands(self):
+        raise NotImplementedError
 
     def render_scene(self):
 
