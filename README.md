@@ -22,13 +22,18 @@ License: [The Code Project Open License (CPOL) 1.02]
     * Added some GUI funcionality
     * Both couldn't 100% functional, probably have some bugs
         * The OBJ filer loader don't work for all OBJ files cases because some OBJ files export complex models a bit differently from low-poly models
-    * Folders:
-        * rsc/ - OBJ files
-        * rsc/Texture - MTL files
+* Folders:
+    * rsc/ - OBJ files
+    * rsc/Texture - MTL files
+* Dependencies:
+    * Python 2/3
+        * Developed in Python 3.6
+        * Pillow - to read images for texture
 
-* Remember check your path for your OpenGL Shared Object library
+* Remember check your path for your OpenGL Shared Object library (Linux)
 * Check MTL path on your OBJ files
-* Thanks for Alexandr Lazov for ask to help which make do it this and sorry not complete this
+
+* Thanks for Alexandr Lazov by ask help, which made I starting this branch and sorry not complete him
     * Their links about obj loader coding:
         * [PyGAME ObjLoader]
         * [PyOpenGL tutorial(russian)]
