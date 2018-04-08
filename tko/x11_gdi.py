@@ -2,7 +2,7 @@ from ctypes import c_char_p, c_void_p, cdll
 
 # Shared library path hardcode for Xubuntu 15.10
 
-_x11lib = cdll.LoadLibrary('/usr/lib/i386-linux-gnu/libX11.so')
+_x11lib = cdll.LoadLibrary('/usr/lib/x86_64-linux-gnu/libX11.so')
 
 X11_None = 0
 

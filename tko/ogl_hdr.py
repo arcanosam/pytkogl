@@ -17,7 +17,7 @@ elif sys.platform.startswith('linux'):
 
     # Shared library path hardcode for Xubuntu 15.10
 
-    _libGL = cdll.LoadLibrary('/usr/lib/i386-linux-gnu/mesa/libGL.so')
+    _libGL = cdll.LoadLibrary('/usr/lib/x86_64-linux-gnu/mesa/libGL.so.1')
 
 else:
     raise NotImplementedError
